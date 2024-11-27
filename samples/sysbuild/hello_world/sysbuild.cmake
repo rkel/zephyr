@@ -1,6 +1,9 @@
 # Copyright (c) 2024 Nordic Semiconductor ASA
 # SPDX-License-Identifier: Apache-2.0
 
+message("In sysbuild.cmake")
+message("APP_CONFIG: ${APP_CONFIG}")
+
 if("${SB_CONFIG_REMOTE_BOARD}" STREQUAL "")
   message(FATAL_ERROR "REMOTE_BOARD must be set to a valid board name")
 endif()
